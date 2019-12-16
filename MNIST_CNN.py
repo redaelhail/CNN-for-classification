@@ -29,7 +29,7 @@ print(np.shape(x_train))
 #Create a model
 model = keras.Sequential([
 	#keras.layers.Flatten(input_shape=(28,28)),
-	keras.layers.Conv2D(8,(3,3),(1,1),padding = "same",input_shape=(28,28,1)),
+	keras.layers.Conv2D(4,(3,3),(1,1),padding = "same",input_shape=(28,28,1)),
 	keras.layers.MaxPooling2D(pool_size = (2,2),padding = "valid"),
 	#keras.layers.Conv2D(32,(3,3),(1,1),padding = "same"),
 	#keras.layers.MaxPooling2D(pool_size = (2,2),padding = "valid"),
@@ -46,4 +46,4 @@ model.fit(x_train, y_train, epochs=3, validation_split=0.2, callbacks=[early_sto
 test_loss,test_acc = model.evaluate(x_test,y_test)
 print("\ntest accuracy:",test_acc)
 
-#model.save("CNN_MNIST.h5")
+model.save(r"C:\Users\HP\Desktop\Opencv training\CNN_MNIST_4filters.h5")
