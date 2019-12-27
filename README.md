@@ -1,7 +1,7 @@
 # CNN-for-classification
 
 This is a small project of a convolutional neural network to classify handwritten digits. 
-
+![alt text](https://github.com/redaelhail/CNN-for-classification/blob/master/Figure_2.png)
 •	The main file is 'CNN_MNIST.py' wich is a python program where I built a CNN for handwritten digits classification. The dataset
 was imported using Keras datasets, it is a sort of images (28x28) that contain digits. This dataset was formed of 60000 images for
 training and 10000 for testing. I trained the model using adam optimizer and sparse cross entropy as a loss function in 3 epochs.
